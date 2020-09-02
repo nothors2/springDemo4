@@ -1,0 +1,20 @@
+package com.example.test.model;
+
+/**
+ * author:james
+ * day:2020-09-02
+ */
+import java.io.Serializable;
+
+public class AuthenticationResponse implements Serializable {
+
+    private final String jwt;
+
+    public AuthenticationResponse(String jwt) {
+        this.jwt = jwt;
+    }
+
+    public String getJwt() {
+        return jwt;
+    }
+}
